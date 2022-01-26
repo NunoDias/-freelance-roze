@@ -1,0 +1,25 @@
+/* New Fonts */
+
+@font-face {
+  font-family: "Nanami Medium";
+  src: url("../fonts/Nanami-Rounded-Medium.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nanami Bold";
+  src: url("../fonts/Nanami-Rounded-Bold.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nanami Light";
+  src: url("../fonts/Nanami-Rounded-Light.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nanami-Rounded-ExtraLight";
+  src: url("../fonts/Nanami-Rounded-ExtraLight.otf") format("opentype");
+  font-style: normal;
+}

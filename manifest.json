@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "bookmarks": [
+    {
+      "eventId": "1",
+      "type": "PAGE",
+      "page": "1"
+    },
+    {
+      "eventId": "2",
+      "type": "PAGE",
+      "page": "2"
+    },
+    {
+      "eventId": "3",
+      "type": "PAGE",
+      "page": "3"
+    },
+    {
+      "eventId": "4",
+      "type": "PAGE",
+      "page": "4"
+    },
+    {
+      "eventId": "5",
+      "type": "PAGE",
+      "page": "5"
+    },
+    {
+      "eventId": "6",
+      "type": "PAGE",
+      "page": "6"
+    },
+    {
+      "eventId": "7",
+      "type": "PAGE",
+      "page": "7"
+    },
+    {
+      "eventId": "8",
+      "type": "PAGE",
+      "page": "8"
+    },
+    {
+      "eventId": "21",
+      "type": "BUTTON",
+      "page": "2"
+    },
+    {
+      "eventId": "22",
+      "type": "BUTTON",
+      "page": "2"
+    },
+    {
+      "eventId": "31",
+      "type": "BUTTON",
+      "page": "3"
+    },
+    {
+      "eventId": "41",
+      "type": "BUTTON",
+      "page": "4"
+    },
+    {
+      "eventId": "51",
+      "type": "BUTTON",
+      "page": "5"
+    },
+    {
+      "eventId": "52",
+      "type": "BUTTON",
+      "page": "5"
+    },
+    {
+      "eventId": "53",
+      "type": "BUTTON",
+      "page": "5"
+    },
+    {
+      "eventId": "61",
+      "type": "BUTTON",
+      "page": "6"
+    },
+    {
+      "eventId": "80",
+      "type": "BUTTON",
+      "page": "8"
+    },
+    {
+      "eventId": "81",
+      "type": "BUTTON",
+      "page": "8"
+    },
+    {
+      "eventId": "82",
+      "type": "BUTTON",
+      "page": "8"
+    }
+  ]
+}

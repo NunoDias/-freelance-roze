@@ -1,0 +1,2040 @@
+/* ----- GLOBAL ------- */
+html {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 1366px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+sup {
+  font-size: 10px;
+  vertical-align: top;
+}
+
+sub {
+  font-size: 10px;
+  vertical-align: baseline;
+}
+
+i {
+  font-style: italic;
+}
+
+strong {
+  font-family: "Nanami Medium";
+}
+
+.left {
+  width: 100%;
+}
+
+.redText {
+  color: #ed4224;
+}
+
+/* ----- END GLOBAL ------- */
+
+/* ---- FOOOTER ---- */
+
+.bottom-bar {
+  width: 88%;
+  height: 10%;
+  min-height: 81px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  background: #eee;
+  z-index: 99;
+}
+
+.bottom-bar .product-logo .footerRozetinLogo {
+  width: 200px;
+  height: auto;
+}
+
+.bottom-bar .menarini-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: top;
+  width: 8%;
+  height: 100%;
+  min-height: 45px;
+}
+
+.bottom-bar .menarini-logo img {
+  height: 100%;
+  vertical-align: middle;
+  height: 55%;
+}
+
+.bottom-bar .actions {
+  display: inline-block;
+  position: relative;
+  /* height: 100%; */
+  width: 46%;
+  min-height: 45px;
+  vertical-align: top;
+}
+
+.bottom-bar .actions .action {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.bottom-bar .actions .action img {
+  height: 55%;
+  max-height: 46px;
+  vertical-align: middle;
+}
+
+.bottom-bar .product-logo {
+  display: inline-block;
+  position: relative;
+  /* height: 100%; */
+  width: 46%;
+  /* min-height: 45px; */
+  vertical-align: top;
+  text-align: right;
+}
+
+.bottom-bar .product-logo img {
+  height: 50%;
+  vertical-align: middle;
+}
+
+/* ---- END FOOOTER ---- */
+
+/* ---- HEADER SLIDES: MAIN INFO ---- */
+
+.swiper-slide .default-slide .headerMainInfo {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  background: #fff;
+  justify-content: space-between;
+  font-family: "Nanami Medium";
+  position: relative;
+  height: 50px;
+}
+
+.swiper-slide .default-slide .headerMainInfo::after {
+  content: "";
+  position: absolute;
+  /* z-index: -1; */
+  top: 100%;
+  bottom: 0;
+  width: 120%;
+  height: 10px;
+  left: -10%;
+  right: -10%;
+  background: -webkit-radial-gradient(
+    50% -3%,
+    ellipse cover,
+    rgba(00, 00, 00, 0.5),
+    rgba(97, 97, 97, 0) 30%
+  );
+  background: radial-gradient(
+    ellipse at 50% -3%,
+    rgba(00, 00, 00, 0.5),
+    rgba(97, 97, 97, 0) 30%
+  );
+}
+
+.swiper-slide .default-slide .headerMainInfo .textHeader {
+  text-align: left;
+  color: #26a9e0;
+  margin-left: 50px;
+}
+.swiper-slide .default-slide .headerMainInfo .textHeader .tituloHeader {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.swiper-slide .default-slide .headerMainInfo .textHeader .descritivoHeader {
+  font-family: "Nanami-Rounded-ExtraLight", sans-serif;
+}
+
+.swiper-slide .default-slide .headerMainInfo .logoRozetinHeader {
+  width: 150px;
+  margin-right: 50px;
+}
+
+/* ---- SWIPER GERAL ---- */
+
+.swiper-slide .default-slide {
+  background-image: url("../img/background_slides.png");
+  background-size: cover;
+  background-position: 0px -20%;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide .default-slide .content {
+  position: relative;
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* ---- SWIPER GENERAL ---- */
+
+.swiper-container {
+  width: 100%;
+  height: 90vh;
+}
+
+.swiper-container.hide {
+  display: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: flex-start;
+}
+
+/* ---- END SWIPER GENERAL ---- */
+
+/* ----  HOME ---- */
+
+.home {
+  background-color: #ed4224;
+  background-image: url("../img/main-background.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  z-index: 9;
+}
+
+.home.hide {
+  display: none;
+}
+
+.home.hide {
+  display: none;
+}
+
+.home .home-container {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  height: 80%;
+}
+
+.home-container--left {
+  max-width: 30%;
+}
+
+.home-container--left img {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.home-container--right {
+  width: 70%;
+}
+
+.home-title {
+  position: relative;
+  top: 30%;
+  padding-left: 10%;
+  font-size: 2.8rem;
+  text-align: left;
+  font-family: "Nanami Bold";
+  color: white;
+}
+
+.home-subtitle {
+  font-size: 2.2rem;
+  color: #26a9e0;
+}
+
+@media (min-width: 1024.99px) {
+  .home .menu {
+    bottom: 24%;
+  }
+}
+
+.home .menu:before {
+  position: absolute;
+  height: 21px;
+  width: 65%;
+  background-color: #e75138;
+  content: "";
+  top: 29px;
+  left: 0;
+}
+
+/* ----  END HOME ---- */
+
+/* ---- GAZILION BTNS ---- */
+.gazilion-btn {
+  top: 5%;
+  right: 5%;
+  position: absolute;
+}
+
+.gazilion-img {
+  width: 90%;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  transform: translate(0, -50%);
+}
+/* ---- END GAZILION BTNS ---- */
+
+/* ----  Slider principal ---- */
+.rozetin.bg {
+  background-image: url(../img/main-backgroun.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  z-index: 9;
+}
+.rozetin .rozetin-container {
+  position: absolute;
+  top: 4%;
+  left: 0;
+  padding: 25px;
+  width: 53%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  text-align: left;
+}
+.rozetin .rozetin-container .david {
+  width: 160px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.rozetin .default-slide {
+  width: 100vw;
+  height: 100vh;
+}
+.rozetin .default-slide .content b .registrated,
+.rozetin .default-slide .title b .registrated {
+  color: #0f3966;
+}
+.registrated {
+  font-size: 50% !important;
+  top: -5px !important;
+  position: relative !important;
+  display: initial !important;
+}
+.rozetin .default-slide .david {
+  width: 150px;
+  float: right;
+  padding-top: 18px;
+  padding-right: 8rem;
+}
+.rozetin .default-slide .border {
+  width: 100%;
+  display: block;
+}
+
+/* ---- POP UP BOX ---- */
+
+.pop-up-box {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0);
+  transition: all 0.2s ease-in;
+  z-index: 0;
+}
+
+.pop-up-box.show {
+  display: block;
+  z-index: 99;
+}
+
+.pop-up-box-close-zone {
+  position: fixed;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  background-image: url(../img/background_slides.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pop-up-box-close-border {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  z-index: 3;
+  left: 0;
+}
+
+.pop-up-box-content {
+  position: absolute;
+  padding: 25px 35px;
+  transform: translate(-50%);
+  top: 5%;
+  left: 50%;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.65);
+  text-align: justify;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  height: 75%;
+  width: 85%;
+  background-color: #ffffff;
+  z-index: 2;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.orangeTxt {
+  color: #eb6131;
+}
+
+.pop-up-box-content::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+  display: none;
+}
+
+.pop-up-header-titulo {
+  width: 80%;
+  text-align: left;
+  color: #26a9e0;
+}
+
+.pop-up-header-titulo p {
+  font-family: "Nanami Medium";
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.pop-up-header-titulo.small p {
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+
+.pop-up-header-titulo span {
+  font-family: "Nanami-Rounded-ExtraLight", sans-serif;
+}
+
+.pop-up-box-text {
+  padding: 30px 0 30px 0;
+  font-family: "Nanami Light";
+  color: #1e84b0;
+}
+
+.pop-up-box-text p {
+  margin-bottom: 10px;
+}
+
+.pop-up-box-text .red-with-bg .tooltiptext {
+  top: -170px;
+  right: -115px;
+}
+
+.pop-up-box-text.padding .disclaimer {
+  padding-top: 40px;
+  font-size: 16px;
+}
+
+.close-btn {
+  width: 29px;
+  height: 29px;
+  position: fixed;
+  right: 6%;
+  top: 7%;
+  z-index: 3;
+}
+
+.close-btn--with-search {
+  width: 29px;
+  height: 29px;
+}
+
+.close-btn img {
+  width: 33px;
+}
+
+.close-btn--with-search img {
+  width: 33px;
+}
+
+/* width */
+.pop-up-box ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.pop-up-box ::-webkit-scrollbar-track {
+  background: #cacaca;
+  border-radius: 10px;
+}
+
+/* Handle */
+.pop-up-box ::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.pop-up-box ::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d;
+}
+
+.pop-up-box__header {
+  background: white;
+  display: flex;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 4;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.pop-up-box__header--right {
+  padding-top: 20px;
+  display: flex;
+}
+
+.pop-up-box__header--left {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+.pop-up-box__header--left .pop-up-header-titulo {
+  width: 100%;
+}
+
+/* ---- END POP UP BOX ---- */
+
+.search {
+  height: 33px;
+  width: 87%;
+  display: flex;
+  padding-right: 15px;
+}
+
+.search img {
+  width: 33px;
+}
+
+.search input {
+  border: 1px solid #808080;
+  border-radius: 11px;
+  height: 90%;
+  outline: 0;
+  margin-right: 15px;
+}
+
+/* ---- ICRM ---- */
+
+#playground p {
+  color: black;
+  font-family: "Nanami-Rounded-ExtraLight";
+}
+
+.icrm-footer {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.icrm-footer__assinatura {
+  display: flex;
+  width: 50%;
+}
+
+.icrm-footer__assinatura img {
+  max-height: 5rem;
+  max-width: 8rem;
+}
+
+.icrm-adress {
+  font-size: 9px;
+  color: black;
+  padding: 0 15px;
+}
+
+#icrm-popUp {
+  font-family: "Helvetica Neue LT";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: #3c3c3b;
+}
+
+#icrm-popUp p b {
+  font-family: bold;
+  font-family: "Helvetica Neue LT Bold";
+}
+
+#icrm-popUp p .underline {
+  text-decoration: underline;
+}
+
+#ref-popUp .pop-up-box-content {
+  overflow-y: hidden;
+}
+
+#ref-popUp .close-btn {
+  right: 6%;
+  top: 7%;
+}
+
+.ref-pop-up {
+  font-family: "Helvetica Neue LT Std";
+  font-weight: 300;
+  color: #575756;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  margin: 0 auto;
+  padding: 15px;
+  width: 50%;
+  display: inline-block;
+}
+
+#ref-popUp .pop-up-box-text ol {
+  font-size: 13px;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #000;
+  overflow-y: scroll;
+  display: block;
+  list-style: none;
+  counter-reset: counterName;
+}
+
+#ref-popUp .pop-up-box-text ol li {
+  margin: 5px 0;
+  line-height: 15px;
+  font-family: "Nanami-Rounded-ExtraLight";
+  padding-left: 22px;
+  position: relative;
+  counter-increment: counterName;
+}
+
+#ref-popUp .pop-up-box-text ol li::before {
+  content: counter(counterName);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  text-align: right;
+}
+
+#ref-popUp .pop-up-header-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -10px;
+}
+#ref-popUp .search {
+  width: auto;
+  align-items: center;
+}
+.ref-pop-up h5 {
+  letter-spacing: 0px;
+  color: #575756;
+  font-size: 20px;
+  margin-bottom: 0;
+  font-family: "Helvetica Neue LT Bold";
+  color: #2e2e2d;
+}
+
+.ref-pop-up h5 img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.ref-pop-up p {
+  color: #2e2e2d;
+  font-family: "Helvetica Neue LT";
+  font-size: 13px;
+  line-height: 18px;
+  float: left;
+  width: calc(100% - 22px);
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.ref-pop-up div .number-info {
+  font-family: "Helvetica Neue LT Bold";
+  float: left;
+  color: #2e2e2d;
+  font-size: 12px;
+  line-height: 18px;
+  width: 18px;
+}
+
+.ref-pop-up-footer {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  height: 200px;
+}
+
+.ref-pop-up-footer p {
+  width: 50%;
+  font-family: "Helvetica Neue LT Std";
+  font-weight: 300;
+  color: #575756;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.ref-pop-up-footer-assinatura {
+  width: 44%;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.ref-pop-up-footer-assinatura .red-footer {
+  border-top: 30px solid #e75138;
+  background-color: #d9000d;
+  color: #fff;
+  padding: 48px 30px;
+  text-align: right;
+}
+
+.ref-pop-up-footer-assinatura .red-footer span {
+  font-size: 11px;
+  font-family: "Montserrat";
+  display: block;
+}
+
+.ref-pop-up-footer-assinatura .red-footer span:first-child {
+  margin-bottom: 20px;
+  width: 72%;
+  margin-left: auto;
+}
+
+.ref-pop-up-footer-assinatura img {
+  width: 150px;
+  margin-right: 130px;
+}
+
+.adress {
+  font-family: "Frutiger Light";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 16px;
+  width: 100%;
+  margin-left: auto;
+  text-align: center;
+}
+
+.adress b {
+  font-weight: bold;
+}
+
+/* ---- POP UP LATERAL---- */
+
+.stucture-map {
+  position: fixed;
+  transform: translateX(-240px);
+  top: 0;
+  opacity: 0;
+  z-index: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #000000;
+  -webkit-box-shadow: 3px 0px 7px -2px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 3px 0px 7px -2px rgba(0, 0, 0, 0.65);
+  box-shadow: 3px 0px 7px -2px rgba(0, 0, 0, 0.65);
+  transition: all 0.2s ease-in;
+}
+
+.stucture-map-content {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: scroll;
+  height: 98%;
+}
+
+.stucture-map-content img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.stucture-map.show {
+  opacity: 1;
+  z-index: 100;
+  transform: translateX(0);
+}
+
+.stucture-map-closed {
+  position: absolute;
+  width: 3000px;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0);
+  right: -3000px;
+  top: 0;
+  z-index: 3;
+}
+/* ---- END POP UP LATERAL---- */
+
+.header-last-page .tooltip {
+  margin-left: 3px;
+}
+
+.logo-icrm {
+  display: block;
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 46px;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+mark {
+  background-color: rgb(246, 197, 45) !important;
+}
+
+.margin-top {
+  margin: 55px auto 40px;
+}
+
+#playground .helvetica-bold {
+  display: inline;
+}
+
+/* --- ANIMES --- */
+
+.swiper-wrapper .introduction .introduction-container p {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.swiper-wrapper .introduction.swiper-slide-active .introduction-container p {
+  opacity: 1;
+}
+
+.swiper-wrapper .introduction .introduction-container-ii ul li {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.swiper-wrapper
+  .introduction.swiper-slide-active
+  .introduction-container-ii
+  ul
+  li {
+  opacity: 1;
+}
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+
+.pain-image-text-1 {
+  position: absolute;
+  bottom: 63%;
+  right: 0;
+  color: #fff;
+  font-size: 11px;
+  width: 132px;
+  font-family: "Montserrat";
+}
+
+@media (min-width: 1024.99px) {
+  .pain-image-text-1 {
+    bottom: 65%;
+    font-size: 15px;
+  }
+}
+
+.blankButton {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
+.blankButton.bottomButton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blankButton.topButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.analyse .analyse-container {
+  position: absolute;
+  top: 4%;
+  left: 0;
+  padding: 25px;
+  width: 53%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  text-align: left;
+  height: 55%;
+}
+
+.analyse .analyse-container .david {
+  width: 160px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.analyse.bg {
+  position: relative;
+  height: 100vh;
+  z-index: 9;
+}
+
+.analyse .disclaimer {
+  position: absolute;
+  bottom: 15%;
+  color: #fff;
+  width: 90%;
+}
+
+.analyse .disclaimer-border {
+  position: absolute;
+  bottom: 34%;
+  left: 0;
+  background-color: #e75138;
+  width: 66%;
+  height: 2%;
+}
+
+.analyse .disclaimer img {
+  width: 100%;
+  height: auto;
+}
+
+.analyse .action.zoom img {
+  width: 40px;
+}
+
+.color-red {
+  color: #ed1c24 !important;
+}
+
+.color-blue {
+  color: #214f7d !important;
+}
+
+.swiper-analyse .tooltip,
+.analyse-pop-up .tooltip {
+  font-family: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.pop-up-box.fix-height-popup .pop-up-box-content .pop-up-box-text {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: 90%;
+  font-size: 18px;
+  padding: initial;
+  text-align: left;
+  line-height: 22px;
+}
+
+.pop-up-box.fix-height-popup .pop-up-box-content img {
+  /* height: 80%; */
+  padding-right: 15px;
+}
+
+/* Last slider [ Rosuvastina ajuda a chegar ao coração ] */
+
+.rozetin.eightSlide .default-slide {
+  background-image: url(../img/bg_caixaComp.png);
+  background-position: center;
+  background-size: 106%;
+}
+
+.rozetin.eightSlide .content .bgRedRounded {
+  background: #ed4224;
+  border-radius: 40px;
+  font-family: "Nanami Light";
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 40px;
+  box-shadow: inset 0px 0px 5px #565656;
+  width: fit-content;
+}
+
+.rozetin.eightSlide .content .centerInfo {
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+.rozetin.eightSlide .content .centerInfo .headerBlue {
+  color: #26a9e0;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-family: "Nanami Medium";
+}
+
+.rozetin.eightSlide .content .imgCompRozetin {
+  width: 100%;
+  margin-top: -5%;
+  height: 60%;
+  object-fit: contain;
+  display: none;
+}
+
+.rozetin.eightSlide .content .centerInfo .subHeaderRed {
+  font-family: "Nanami Light";
+  color: #ed4224;
+  margin-bottom: 5px;
+}
+
+.rozetin.eightSlide .content .bottomInfo {
+  text-align: left;
+  font-family: "Nanami Light";
+  color: #156075;
+  margin-left: 50px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5%;
+}
+
+.rozetin.eightSlide .content .btnCompDia {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.rozetin.eightSlide .content .btnCompDia .comprimidoImg {
+  width: 150px;
+}
+
+.moreIconBook {
+  width: 40px;
+  position: relative;
+  margin-left: 10px;
+}
+
+/* 7 slider [ Rosuvastatina: a estatina com menor incidência
+de miopatias de acordo com a sua potência ] */
+
+.rozetin.seventhSlide .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rozetin.seventhSlide .content .containerTransparente {
+  max-width: 100%;
+  background: url("../img/bgCornered.png");
+  background-size: cover;
+  padding: 80px 5%;
+  border-radius: 10px 10px 10px 100px;
+}
+.rozetin.seventhSlide .content .containerTransparente div {
+  display: flex;
+  margin: 10px 0;
+}
+
+.rozetin.seventhSlide .content .containerTransparente div img {
+  /* height: 110px; */
+}
+
+.rozetin.seventhSlide .content .containerTransparente div img:first-of-type {
+  margin-right: 10px;
+}
+
+.rozetin.seventhSlide .content .containerTransparente div img:nth-of-type(2),
+.rozetin.seventhSlide .content .containerTransparente div img:nth-of-type(3),
+.rozetin.seventhSlide .content .containerTransparente div img:nth-of-type(4) {
+  transform: translate(-100%, 0);
+  opacity: 0;
+}
+
+/** ANIMATE */
+
+.rozetin.seventhSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(2),
+.rozetin.seventhSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(3),
+.rozetin.seventhSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(4) {
+  transform: translate(-0%, 0);
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+.rozetin.seventhSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(3) {
+  transition-delay: 1s;
+}
+
+.rozetin.seventhSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(4) {
+  transition-delay: 2s;
+}
+
+/** END ANIMATE **/
+
+.rozetin.seventhSlide .content .containerTransparente div .vCut {
+  margin-left: -20px;
+}
+
+/* 6 slider [ Rosuvastatina: a estatina que apresenta menos interações <br>
+medicamentosas que a atorvastatina ou sinvastatina ] */
+
+.rozetin.sixthSlide .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rozetin.sixthSlide .content .containerTransparente {
+  background: url("../img/bgCornered.png");
+  background-size: cover;
+  width: 100%;
+  padding: 80px 5%;
+  border-radius: 10px 10px 10px 100px;
+  position: relative;
+}
+.rozetin.sixthSlide .content .containerTransparente div {
+  display: flex;
+  margin: 10px 0;
+}
+
+.rozetin.sixthSlide .content .containerTransparente div img {
+  /* height: 110px; */
+}
+
+.rozetin.sixthSlide .content .containerTransparente div img:first-of-type {
+  margin-right: 10px;
+}
+
+.rozetin.sixthSlide .content .containerTransparente div img:nth-of-type(2),
+.rozetin.sixthSlide .content .containerTransparente div img:nth-of-type(3),
+.rozetin.sixthSlide .content .containerTransparente div img:nth-of-type(4) {
+  transform: translate(-100%, 0);
+  opacity: 0;
+}
+
+.secRowImgs {
+  position: relative;
+}
+
+/** ANIMATE */
+
+.rozetin.sixthSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(2),
+.rozetin.sixthSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(3),
+.rozetin.sixthSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(4) {
+  transform: translate(-0%, 0);
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+.rozetin.sixthSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(3) {
+  transition-delay: 1s;
+}
+
+.rozetin.sixthSlide.swiper-slide-active
+  .content
+  .containerTransparente
+  div
+  img:nth-of-type(4) {
+  transition-delay: 2s;
+}
+
+/** END ANIMATE **/
+.rozetin.sixthSlide .content .containerTransparente div .vCut {
+  margin-left: -20px;
+}
+
+.rozetin.sixthSlide .content .containerTransparente .redText {
+  color: #ed4224;
+  font-family: "Nanami Light";
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 22px;
+  top: 8%;
+  position: absolute;
+}
+
+/* Pop Up slide 2 */
+
+#rozetinButtons-PopUp .left {
+  width: 100%;
+  position: relative;
+}
+
+#rozetinButtons-PopUp .left .content-img {
+  width: 100%;
+}
+
+#rozetinButtons-PopUp .left .next-btn {
+  position: absolute;
+  top: 55%;
+  right: 3%;
+}
+#rozetinButtons2-PopUp .left {
+  width: 100%;
+  position: relative;
+}
+
+#rozetinButtons2-PopUp .left .content-img {
+  width: 100%;
+}
+
+#rozetinButtons2-PopUp .left .next-btn {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+/* Pop Up slide 2 - END */
+
+/* Pop Up slide 6 */
+
+#rozetinFarmacosInibidores-PopUp .pop-up-box-text {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 60%;
+  margin-top: 8%;
+}
+
+#rozetinFarmacosInibidores-PopUp .pop-up-box-text .left {
+  width: 60%;
+}
+
+#rozetinFarmacosInibidores-PopUp .pop-up-box-text .right {
+  width: 37%;
+  font-size: 15px;
+  line-height: 16px;
+  color: #156075;
+}
+
+#rozetinFarmacosInibidores-PopUp .pop-up-box-text .left .tabela_slide6 {
+  width: 100%;
+}
+
+#rozetinFarmacosInibidores-PopUp .pop-up-box-text .left p {
+  color: #156075;
+  font-size: 15px;
+  line-height: 16px;
+  width: 90%;
+  font-family: "Nanami Light", sans-serif;
+  margin-top: 20px;
+}
+
+#rozetinFarmacosInibidores-PopUp .pop-up-box-text .left p b {
+  font-family: "Nanami Medium", sans-serif;
+}
+/* 
+@media only screen and (max-width: 1150px) {
+  #rozetinFarmacosInibidores-PopUp .pop-up-box-text {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #rozetinFarmacosInibidores-PopUp .pop-up-box-text .left p {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  #rozetinFarmacosInibidores-PopUp .pop-up-box-text .left {
+    width: 80%;
+  }
+
+  #rozetinFarmacosInibidores-PopUp .pop-up-box-text .right {
+    width: 100%;
+  }
+} */
+
+/* 5 slider [ ROZETIN® DIMINUI O RISCO DE EVENTOS CV ] */
+
+.swiper-slide.fifthSlide .default-slide .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rozetin.fifthSlide .content .graficoSlide5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .left {
+  width: 40%;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .left img {
+  width: 100%;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .arrowDown {
+  margin-top: -25px;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, visibility 1s;
+  transition-delay: 1s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .arrowDown {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s, visibility 1s;
+  transition-delay: 1.5s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .arrowDownRed {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s, visibility 1s;
+  transition-delay: 2.4s;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .arrowDownRed {
+  margin-top: -5px;
+  position: relative;
+}
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  border-radius: 40px;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer div {
+  padding: 15px;
+  margin: 5px 0;
+  color: #fff;
+  background: #26a9e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 5px #565656;
+  font-family: "Nanami Medium";
+  text-align: center;
+  position: relative;
+}
+.rozetin.fifthSlide .content .graficoSlide5 .right .TCBlue {
+  background: #bfe5f7;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .TCBlue div,
+.rozetin.fifthSlide .content .graficoSlide5 .right .secondTC div,
+.rozetin.fifthSlide .content .graficoSlide5 .right .thirdTC div,
+.rozetin.fifthSlide .content .graficoSlide5 .right .arrowDownRed {
+  opacity: 0;
+  transition: opacity 1s, visibility 1s;
+  transition-delay: 1s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .TCBlue
+  div,
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .secondTC
+  div,
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .thirdTC
+  div {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s, visibility 1s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .TCBlue
+  div:nth-child(1) {
+  transition-delay: 0.3s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .TCBlue
+  div:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .TCBlue
+  div:nth-child(3) {
+  transition-delay: 0.9s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .TCBlue
+  div:nth-child(4) {
+  transition-delay: 1.2s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .secondTC
+  div:nth-child(1) {
+  transition-delay: 1.8s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .secondTC
+  div:nth-child(2) {
+  transition-delay: 2.1s;
+}
+
+.rozetin.fifthSlide.swiper-slide-active
+  .content
+  .graficoSlide5
+  .right
+  .thirdTC
+  div:nth-child(1) {
+  transition-delay: 2.7s;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer.secondTC div {
+  background: #1e84b0;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer.secondTC,
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer.thirdTC {
+  padding: 0 20px;
+}
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer.thirdTC div {
+  background: #ed4224;
+}
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer div img {
+  position: absolute;
+  left: 10px;
+  width: 40px;
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer .up {
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer .down img {
+  transform: rotate(180deg);
+}
+
+.rozetin.fifthSlide .content .graficoSlide5 .right .topContainer .moreIconBook {
+  position: absolute;
+  right: -60px;
+  bottom: 10%;
+  margin-left: auto;
+}
+
+/* Pop Up slide 6 - EventosCardiovasculares */
+
+#rozetinEventosCardiovasculares-PopUp .pop-up-box-text {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#rozetinEventosCardiovasculares-PopUp .pop-up-box-text .left {
+  width: 65%;
+}
+
+#rozetinEventosCardiovasculares-PopUp .pop-up-box-text .right {
+  width: 33%;
+  font-size: 15px;
+  line-height: 16px;
+  color: #156075;
+}
+
+#rozetinEventosCardiovasculares-PopUp .pop-up-box-text .left .tabela_slide5 {
+  width: 100%;
+}
+
+#rozetinEventosCardiovasculares-PopUp .pop-up-box-text .left p {
+  color: #26a9e0;
+  font-size: 15px;
+  line-height: 16px;
+  margin-left: 30%;
+  font-family: "Nanami Medium", sans-serif;
+  margin-top: 20px;
+}
+
+#rozetinEventosCardiovasculares-PopUp .pop-up-box-text .left span {
+  margin-left: 30%;
+  display: block;
+  color: #156075;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+#rozetinEventosCardiovasculares-PopUp .pop-up-box-text .left span b {
+  font-family: "Nanami Medium", sans-serif;
+}
+
+/* Pop Up slide 6 - Redução Placas Coronárias */
+
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text {
+  flex-direction: row;
+  align-items: center;
+  height: 80%;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .left {
+  width: 50%;
+}
+
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .right {
+  width: 50%;
+  margin-left: 5%;
+  color: #156075;
+  font-size: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .right .redP {
+  color: #ed4224;
+}
+
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .left .tabela_slide5 {
+  width: 100%;
+  height: auto;
+}
+
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .left p {
+  color: #26a9e0;
+  font-size: 15px;
+  line-height: 16px;
+  margin-left: 30%;
+  font-family: "Nanami Medium", sans-serif;
+  margin-top: 20px;
+}
+
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .left span {
+  margin-left: 30%;
+  display: block;
+  color: #156075;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+#rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .left span b {
+  font-family: "Nanami Medium", sans-serif;
+}
+/* 
+@media only screen and (max-width: 1150px) {
+  #rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .left p {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  #rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .left {
+    width: 80%;
+  }
+
+  #rozetinReducaoPlacasCoronarias-PopUp .pop-up-box-text .right {
+    width: 100%;
+  }
+} */
+
+/* Pop Up slide 6 - Redução LDL */
+
+#rozetinReducaoLDL-PopUp .pop-up-box-text {
+  flex-direction: row;
+  /* align-items: center; */
+  height: 85%;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+#rozetinReducaoLDL-PopUp .pop-up-box-text .left {
+  width: 60%;
+}
+
+#rozetinReducaoLDL-PopUp .pop-up-box-text .right {
+  width: 40%;
+  margin-left: 1%;
+  color: #156075;
+  height: 100%;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#rozetinReducaoLDL-PopUp .pop-up-box-text .right .redP {
+  color: #ed4224;
+}
+
+#rozetinReducaoLDL-PopUp .pop-up-box-text .left .tabela_slide5 {
+  width: 100%;
+  height: auto;
+}
+
+#rozetinReducaoLDL-PopUp .pop-up-box-text .left p {
+  color: #ed4224;
+  font-size: 15px;
+  line-height: 16px;
+  margin-left: 19%;
+  font-family: "Nanami Light", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  width: 80%;
+}
+
+#rozetinReducaoLDL-PopUp .pop-up-box-text .left span {
+  margin-left: 30%;
+  display: block;
+  color: #156075;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+#rozetinReducaoLDL-PopUp .pop-up-box-text .left span b {
+  font-family: "Nanami Medium", sans-serif;
+}
+/* 
+@media only screen and (max-width: 1150px) {
+  #rozetinReducaoLDL-PopUp .pop-up-box-text {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #rozetinReducaoLDL-PopUp .pop-up-box-text .left p {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  #rozetinReducaoLDL-PopUp .pop-up-box-text .left {
+    width: 80%;
+  }
+
+  #rozetinReducaoLDL-PopUp .pop-up-box-text .right {
+    width: 100%;
+  }
+} */
+
+/* 4 slider [ Alvos terapêuticos de C-LDL em função do risco CV12  ] */
+
+.rozetin.forthSlide .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rozetin.forthSlide .content .containerTransparente {
+  background: url("../img/bgCornered.png");
+  background-size: cover;
+  padding: 40px 40px;
+  border-radius: 10px 10px 10px 100px;
+  position: relative;
+}
+.rozetin.forthSlide .content .containerTransparente div {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.rozetin.forthSlide .content .containerTransparente div .graf_slide4 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.rozetin.forthSlide .content .containerTransparente div .vCut {
+  margin-left: -30px;
+}
+
+.rozetin.forthSlide .content .containerTransparente .moreIconBook {
+  margin-top: 4%;
+  margin-left: 0;
+}
+
+.rozetin.forthSlide .content .containerTransparente .smallInfoText {
+  text-align: right;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #156075;
+  font-family: "Nanami Light", sans-serif;
+}
+
+/* POP Up Slide 4 - Estrategias de intervenção */
+
+#rozetinReducaoLDLEstrategias-PopUp .pop-up-box-text {
+  height: auto;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp .estrategiasGrafico {
+  display: flex;
+  flex-direction: column;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp .estrategiasGrafico .each {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp .estrategiasGrafico .each .tituloGrafico {
+  width: 15%;
+  border-radius: 40px 0 0 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: inset 0px 0px 5px #565656;
+}
+#rozetinReducaoLDLEstrategias-PopUp
+  .estrategiasGrafico
+  .muitoRisco
+  .tituloGrafico {
+  background-color: #a52900;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp
+  .estrategiasGrafico
+  .altoRisco
+  .tituloGrafico {
+  background-color: #e72900;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp
+  .estrategiasGrafico
+  .riscoModerado
+  .tituloGrafico {
+  background-color: #ed7d31;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp
+  .estrategiasGrafico
+  .baixoRisco
+  .tituloGrafico {
+  background-color: #f4ba00;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp .estrategiasGrafico .each .tituloGrafico p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp
+  .estrategiasGrafico
+  .each
+  .tituloGrafico
+  span {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp .estrategiasGrafico .each .bulletsGrafico {
+  width: 80%;
+  background: #bfe5f7;
+  color: #156075;
+  font-family: "Nanami Light", sans-serif;
+  font-size: 15px;
+  border-radius: 0px 40px 40px 0px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#rozetinReducaoLDLEstrategias-PopUp
+  .estrategiasGrafico
+  .each
+  .bulletsGrafico
+  li {
+  line-height: 16px;
+  margin: 5px 0;
+}
+
+/* 3º Slide */
+
+.swiper-slide.thirdSlide .default-slide .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .left {
+  width: 60%;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .left img {
+  width: 95%;
+  margin-top: 5px;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .topContainer {
+  width: 100%;
+  /* padding: 20px; */
+  position: relative;
+  border-radius: 40px;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .topContainer div {
+  padding: 15px;
+  margin: 5px 0;
+  color: #fff;
+  /* background: #26a9e0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 5px #565656;
+  font-family: "Nanami Medium";
+  text-align: center;
+  position: relative;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .topContainer.first div {
+  background-color: #ed4224;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .topContainer.second div {
+  background-color: #26a9e0;
+  width: 60%;
+  margin: 5px auto;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .topContainer.third div {
+  width: 60%;
+  margin: 5px auto;
+  margin-bottom: 0;
+  background-color: #156075;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .topContainer .moreIconBook {
+  position: absolute;
+  right: -60px;
+  bottom: 10%;
+  margin-left: auto;
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .arrowDown,
+.rozetin.thirdSlide .content .graficoSlide5 .right .arrowDownRed {
+  margin-top: -12px;
+  position: relative;
+  width: 8%;
+  /* visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s;
+    transition-delay: 1s; */
+}
+
+.rozetin.thirdSlide .content .graficoSlide5 .right .legenda {
+  position: absolute;
+  bottom: 0;
+  left: -75%;
+  width: 60%;
+  color: #00577b;
+  background: #a9ddf2;
+  border-radius: 40px;
+  height: 57%;
+  padding: 10%;
+  text-align: left;
+  font-size: 15px;
+  line-height: 16px;
+  box-shadow: 0 0 10px #b1b1b1;
+  font-family: "Nanami Light";
+}
+
+/* Pop Up - slide 8 Dosagem */
+#rozetin-slide-8-dosagem-popUp .bgRedRounded {
+  background: #ed4224;
+  border-radius: 40px;
+  font-family: "Nanami Light";
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 40px;
+  box-shadow: inset 0px 0px 5px #565656;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+/* Pop Up - Novo Paradigma */
+
+#rozetinParadigma-PopUp.fix-height-popup .pop-up-box-content img {
+  width: 100%;
+  height: auto;
+}
+
+#rozetinParadigma-PopUp.fix-height-popup .pop-up-box-content {
+  /* height: 70%; */
+}
+
+#rozetinParadigma-PopUp.fix-height-popup .pop-up-box-content .pop-up-box-text {
+  margin-top: 3%;
+}
